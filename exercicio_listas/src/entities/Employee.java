@@ -15,7 +15,6 @@ public class Employee {
         return id;
     }
 
-
     public String getName() {
         return name;
     }
@@ -32,6 +31,5 @@ public class Employee {
     public String toString() {
         return id + ", " + name + ", " + String.format("%.2f", salary);
     }
-
     
 }

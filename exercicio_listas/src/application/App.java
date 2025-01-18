@@ -23,28 +23,32 @@ public class App {
             System.out.printf("Employee #%d\n", i + 1);
             System.out.printf("Id: ");
             int id = sc.nextInt();
+
+            while (idValidation(list, id)) {
+                System.err.println("Id already existe, select other one: ");
+                id = sc.nextInt(); 
+            }
+
             System.out.printf("Name: ");
             sc.nextLine();
             String name = sc.nextLine();
             System.out.printf("Salary: ");
             Double salary = sc.nextDouble();
 
-            Employee e = new Employee(id, name, salary);
-            list.add(e);
+            list.add(new Employee(id, name, salary));
 
         }
 
-        System.err.println();
+        System.out.println();
 
         System.out.print("Enter the employee id that will have salary increase: ");
         int idIncrease = sc.nextInt();
 
-        System.err.println();
+        System.out.println();
 
         if (list.stream().filter(x -> x.getId() == idIncrease).findFirst().orElse(null) == null){
 
             System.out.println("This id does not exist!\r");
-
                 
         }
 
@@ -54,18 +58,21 @@ public class App {
             Double percentage = sc.nextDouble();
 
            list.stream().filter(x -> x.getId() == idIncrease).forEach(x -> x.increaseSalary(percentage));
-            
                 
         }
+
         System.out.println();
 
         System.out.println("List of employees: ");
 
-        for(Object x : list){
-
-            System.out.println(x);
-        }
-
+        for(Object x : list) System.out.println(x);
 
     }
+
+    public static Boolean idValidation(List<Employee> list, int id){
+
+        Employee e = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+        return e != null;
+    }
 }
+
