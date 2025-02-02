@@ -76,6 +76,7 @@
       <module fileurl="file://$PROJECT_DIR$/Exercicios_vetores/soma_vetor/soma_vetor.iml" filepath="$PROJECT_DIR$/Exercicios_vetores/soma_vetor/soma_vetor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercicios_vetores/soma_vetores/soma_vetores.iml" filepath="$PROJECT_DIR$/Exercicios_vetores/soma_vetores/soma_vetores.iml" />
       <module fileurl="file://$PROJECT_DIR$/switch-case/switch-case.iml" filepath="$PROJECT_DIR$/switch-case/switch-case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enumStringBuilder/untitled.iml" filepath="$PROJECT_DIR$/enumStringBuilder/untitled.iml" />
       <module fileurl="file://$PROJECT_DIR$/vetores_pt2/vetores_pt2.iml" filepath="$PROJECT_DIR$/vetores_pt2/vetores_pt2.iml" />
       <module fileurl="file://$PROJECT_DIR$/while/while.iml" filepath="$PROJECT_DIR$/while/while.iml" />
     </modules>
